@@ -65,24 +65,22 @@ const App = () => {
 
       <form  onSubmit={validate}>
 
-        <label>name</label>
-        <input type="text" data-testid = 'name'  />
+        <label>Name</label>
+        <input type="text" data-testid = 'name'  /><br/>
         <label>Email</label>
-        <input type="text" data-testid='email' id = "email"  /> 
+        <input type="text" data-testid='email' id = "email"  /><br/>
         <label>Gender</label>
-
         <select data-testid='gender' placeholder="Gender">
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="other">Others</option>
-        </select>
+        </select><br/>
 
           <label>Phone Number</label>
-          <input type="text" data-testid='phoneNumber'   />
+          <input type="text" data-testid='phoneNumber'   /><br/>
           <label>Password</label>
-          <input type="password" data-testid = "password"  />
+          <input type="password" data-testid = "password"  /><br/>
           <button type="submit" data-testid="submit">Submit</button>
-
         </form>
 
         <div id="error"></div>
